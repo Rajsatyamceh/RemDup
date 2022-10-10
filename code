@@ -1,0 +1,28 @@
+#include <stdio.h>
+int remove_duplicate(int arr[], int n)
+{
+
+  
+
+int main()
+{
+  int n;
+  scanf("%d", &n);
+  int arr[n];
+  int i;
+  for (i = 0; i < n; i++)
+  {
+    scanf("%d", &arr[i]);
+  }
+  printf("\nArray Before Removing Duplicates: ");
+  for (i = 0; i < n; i++)
+    printf("%d ", arr[i]);
+
+  n = remove_duplicate(arr, n);
+
+  printf("\nArray After Removing Duplicates: ");
+  for (i = 0; i < n; i++)
+    printf("%d ", arr[i]);
+
+  return 0;
+}
